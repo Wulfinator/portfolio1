@@ -20,7 +20,7 @@ const Experience = () => {
             title="Coming soon"
             subTitle=""
             result="Germany"
-            des="Because I'm recently finished the course at DCI of course there is no experience instead of the learning process. So stay tuned"
+            des="Because I have recently finished the course at DCI of course there is no experience instead of the learning process. So stay tuned"
           />
           {/* <ResumeCard
             title="Web Developer & Trainer"
