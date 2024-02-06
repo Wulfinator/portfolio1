@@ -25,7 +25,7 @@ const LeftBanner = () => {
         </h2>
         <p className="text-base leading-6 tracking-wider font-bodyFont">
           As a web developer with knowledge of HTML, CSS and JavaScript as well
-          as frameworks such as ReactJs, Vite & NodeJs, I work closely with
+          as frameworks such as React, Vite & Node, I work closely with
           customers to create efficient, scalable and user-friendly solutions. I
           am a quick learner and look forward to improve my skills in your
           company.

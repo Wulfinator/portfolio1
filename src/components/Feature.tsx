@@ -36,7 +36,7 @@ const Feature = () => {
           />
           <Card
             title="Hosting Websites"
-            des="You and me will work together on the specifications that you need to secure your website and find the best hosting solution."
+            des="We will work together on the specifications that are needed to secure your website and find the best hosting solution."
             icon={<FaGlobe />}
           />
         </div>
