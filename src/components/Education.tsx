@@ -19,7 +19,7 @@ const Education = () => {
             title="Web Development Course"
             subTitle="DCI - Digital Career Institute GmbH (Jan 2023 - now)"
             result="Certification"
-            des="I completed the Web Development course offered by Digital Career Institute (DCI). The curriculum covered basic coding languages such as HTML, JavaScript and CSS and progressed to advanced technologies that are essential for all programmers. The course was hands-on and I worked on real projects to gain practical experience. By the end of the course, I had built an impressive portfolio that showcased my skills and knowledge in web development."
+            des="I completed the web development course offered by the Digital Career Institute (DCI). The curriculum included basic programming skills in JavaScript, HTML and CSS, as well as advanced knowledge that is essential for any programmer. The course was hands-on, and I worked on real-life projects to gain hands-on experience. By the end of the course, I had built up an impressive portfolio that demonstrated my web development skills and knowledge."
           />
           {/* <ResumeCard
             title="Secondary School Education"
@@ -41,7 +41,7 @@ const Education = () => {
             title="Tutorship"
             subTitle="DCI - Digital Career Institute GmbH (Feb 2023 - Jan 2024)"
             result="Germany"
-            des="Tutoring is an extracurricular service provided by DCI that gives participants the opportunity to review what they have learned in class and to review difficult or misunderstood concepts with a tutor. My tasks: -Answering questions, -Reviewing exercises, -Supporting students in their learning"
+            des="Tutoring is an extracurricular service provided by DCI that gives participants the opportunity to review what they have learned in class and to review difficult or misunderstood concepts with a tutor. My tasks included answering questions, reviewing exercises, supporting students"
           />
           {/* <ResumeCard
             title="Web Developer & Trainer"

@@ -61,7 +61,7 @@ const Contact = () => {
     >
       <FadeIn>
         <div className="flex items-center justify-center text-center">
-          <Title title="CONTACT" des="Contact With Me" />
+          <Title title="CONTACT" des="Contact Me" />
         </div>
         <div className="w-full">
           <div className="flex flex-col justify-between w-full h-auto lgl:flex-row">

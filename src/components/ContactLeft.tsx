@@ -15,10 +15,7 @@ const ContactLeft = () => {
           Junior Full Stack Developer
         </p>
         <p className="text-base tracking-wide text-gray-400">
-          Hello, this is the end of my page. If you want to contact me, feel free to write me direct an email on the adress further down or contact me through the form. Thank you for visiting my portfolio
-        </p>
-        <p className="text-base tracking-wide text-gray-400">
-          More information about me you find also in my LinkedIn profile (Click on the button below)
+          Thank you for visiting my portfolio! Feel free to contact me via mail below or via contact form.
         </p>
         {/* <p className="flex items-center gap-2 text-base text-gray-400">
           Phone: <span className="text-lightText">+968 97859628</span>
