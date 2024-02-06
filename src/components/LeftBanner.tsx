@@ -34,7 +34,7 @@ const LeftBanner = () => {
       <div className="flex flex-col justify-between gap-6 xl:flex-row lgl:gap-0">
         <div>
           <h2 className="mb-4 text-base uppercase font-titleFont">
-            Find me in
+            Find me on
           </h2>
           <div className="flex gap-4">
             <SocialLinks />
@@ -42,7 +42,7 @@ const LeftBanner = () => {
         </div>
         <div>
           <h2 className="mb-4 text-base uppercase font-titleFont">
-            BEST SKILL ON
+            BEST SKILLS
           </h2>
           <div className="flex gap-4">
             <span className="bannerIcon">

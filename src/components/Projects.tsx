@@ -13,14 +13,14 @@ const Projects = () => {
       <FadeIn>
         <div className="flex items-center justify-center text-center">
           <Title
-            title="VISIT MY PORTFOLIO AND KEEP YOUR FEEDBACK"
+            title="FEEL FREE TO VISIT MY PROJECTS"
             des="My Projects"
           />
         </div>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 xl:gap-14">
           <ProjectsCard
             title="Coming Soon"
-            des="Currently there are no public Projects aviable, but that will change soon. So keep your eye open"
+            des="Currently there are no public projects aviable, but that will change soon."
             src={commingsoon}
           />
           

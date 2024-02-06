@@ -16,7 +16,7 @@ const Feature = () => {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 xl:gap-20">
           <Card
             title="App Development"
-            des="I create WITH YOU a responsive, scaleable and highly customizeable WebApplication or Website."
+            des="I build websites of the highest industry standards, including keywords, meta tags, URLs, mobile-friendly and fast loading. All important factors for SEO to rank high on search engines."
             icon={<AiFillAppstore />}
           />
           <Card
