@@ -113,7 +113,7 @@ const Skills = () => {
                 transition={{ duration: 0.5, delay: 0.5 }}
                 className="relative w-[80%] h-full rounded-md bg-gradient-to-r from-blue-600 via-pink-500 to-red-500"
               >
-                <span className="absolute right-0 -top-7">60%</span>
+                <span className="absolute right-0 -top-7">80%</span>
               </motion.span>
             </span>
           </div>
