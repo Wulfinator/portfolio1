@@ -102,7 +102,7 @@ const Contact = () => {
                     onChange={(e) => setEmail(e.target.value)}
                     value={email}
                     className={`${
-                      errMsg === "Please give your Email!" &&
+                      errMsg === "Please give your email!" &&
                       "outline-designColor"
                     } contactInput`}
                     type="email"
@@ -116,7 +116,7 @@ const Contact = () => {
                     onChange={(e) => setSubject(e.target.value)}
                     value={subject}
                     className={`${
-                      errMsg === "Plese give your Subject!" &&
+                      errMsg === "Plese give your subject!" &&
                       "outline-designColor"
                     } contactInput`}
                     type="text"
