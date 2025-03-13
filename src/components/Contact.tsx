@@ -13,6 +13,8 @@ const Contact = () => {
   const [errMsg, setErrMsg] = useState("");
   const [successMsg, setSuccessMsg] = useState("");
 
+  // Intialising email.js
+  emailjs.init(O9BPK_mD0_Js8KyxL);
   // ========== Email Validation start here ==============
   const emailValidation = (email: string) => {
     return String(email)
@@ -37,7 +39,7 @@ const Contact = () => {
       emailjs
         .send("service_a8353vs", "template_p7x5f9f", {
           from_name: username,
-          to_name: "YOUR_EMAIL_ADDRESS",
+          to_name: "a.guenzel83@gmail.com",
           subject: subject,
           message: message,
           reply_to: email,
