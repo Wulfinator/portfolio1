@@ -14,7 +14,7 @@ const Contact = () => {
   const [successMsg, setSuccessMsg] = useState("");
 
   // Intialising email.js
-  emailjs.init(O9BPK_mD0_Js8KyxL);
+  emailjs.init("O9BPK_mD0_Js8KyxL");
   // ========== Email Validation start here ==============
   const emailValidation = (email: string) => {
     return String(email)
