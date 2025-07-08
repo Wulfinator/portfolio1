@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Link as ScrollLink } from "react-scroll";
+
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
 import { FaGlobe } from "react-icons/fa";
@@ -45,16 +45,19 @@ const Navbar = () => {
               {link === "impressum" ? (
                 <Link to="/impressum">{t(`navbar.impressum`)}</Link>
               ) : location.pathname === "/" ? (
-                <ScrollLink
-                  activeClass="active"
-                  to={link}
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
+                <a
+                  href={`#${link}`}
+                  onClick={e => {
+                    e.preventDefault();
+                    const el = document.getElementById(link);
+                    if (el) {
+                      el.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                  aria-label={t(`navbar.${link === "home" ? "main" : link}`)}
                 >
                   {t(`navbar.${link === "home" ? "main" : link}`)}
-                </ScrollLink>
+                </a>
               ) : (
                 <Link to={`/#${link}`} onClick={() => handleNavClick(link)}>
                   {t(`navbar.${link === "home" ? "main" : link}`)}
