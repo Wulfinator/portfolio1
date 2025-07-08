@@ -31,10 +31,10 @@ const PrivacyPolicy = () => {
           </div>
         </div>
       </section>
-      <div className="w-full border-t border-gray-700 my-8" />
+      <div className="w-full my-8 border-t border-gray-700" />
       <Footer />
     </>
   );
 };
 
-export default PrivacyPolicy;
+export default datenschutz;
