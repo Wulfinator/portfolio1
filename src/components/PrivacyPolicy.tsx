@@ -2,7 +2,7 @@
 import { useTranslation } from "react-i18next";
 import Footer from "./Footer";
 
-const PrivacyPolicy = () => {
+const Datenschutz = () => {
   const { t } = useTranslation();
   return (
     <>
@@ -37,4 +37,4 @@ const PrivacyPolicy = () => {
   );
 };
 
-export default datenschutz;
+export default Datenschutz;
