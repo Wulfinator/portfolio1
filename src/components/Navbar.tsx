@@ -119,17 +119,20 @@ const Navbar = () => {
                         {item.title}
                       </Link>
                     ) : location.pathname === "/" ? (
-                      <ScrollLink
-                        onClick={() => setShowMenu(false)}
-                        activeClass="active"
-                        to={item.link}
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
+                      <a
+                        href={`#${item.link}`}
+                        onClick={e => {
+                          e.preventDefault();
+                          setShowMenu(false);
+                          const el = document.getElementById(item.link);
+                          if (el) {
+                            el.scrollIntoView({ behavior: "smooth" });
+                          }
+                        }}
+                        aria-label={item.title}
                       >
                         {item.title}
-                      </ScrollLink>
+                      </a>
                     ) : (
                       <Link
                         to={`/#${item.link}`}
