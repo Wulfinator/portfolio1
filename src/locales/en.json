@@ -1,4 +1,25 @@
 {
+  "privacy": {
+    "title": "Privacy Policy",
+    "responsible_title": "1. Responsible Entity",
+    "responsible_text": "Adrian Günzel\nc/o IP-Management #4871\nLudwig-Erhard-Straße 18\n20459 Hamburg\nE-Mail: a.guenzel83@gmail.com",
+    "hosting_title": "2. Hosting and Content Delivery Network (CDN)",
+    "hosting_text": "This website is hosted by Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA. Vercel uses Amazon Web Services (AWS) and Cloudflare as subcontractors for technical delivery. A data processing agreement (DPA) has been concluded where possible. Data transfer to the USA is based on the EU Commission's standard contractual clauses.",
+    "logfiles_title": "3. Server Log Files",
+    "logfiles_text": "When you visit this website, information is automatically stored in so-called server log files by the hosting provider. This includes IP address, browser type, operating system, referrer URL, hostname of the accessing computer, and time of the server request. This data is used exclusively to ensure the smooth operation of the site and to improve our offer and is not merged with other data sources.",
+    "ssl_title": "4. SSL/TLS Encryption",
+    "ssl_text": "This site uses SSL or TLS encryption for security reasons and to protect the transmission of confidential content, such as inquiries sent via the contact form. You can recognize an encrypted connection by the fact that the address line of the browser changes from 'http://' to 'https://'.",
+    "contactform_title": "5. Contact Form",
+    "contactform_text": "If you send us inquiries via the contact form, your details from the inquiry form, including the contact details you provide there, will be stored by us for the purpose of processing the inquiry and in case of follow-up questions. We do not pass on this data without your consent.",
+    "social_title": "6. Social Media & External Links",
+    "social_text": "This website contains links to external social networks such as LinkedIn, GitHub, or YouTube. When you click on these links, you leave our website. The operators of the linked sites are solely responsible for their content and data protection.",
+    "cookies_title": "7. Cookies",
+    "cookies_text": "No cookies are set when visiting this website unless expressly stated otherwise.",
+    "rights_title": "8. Your Rights",
+    "rights_text": "You have the right to information, correction, deletion, restriction, data portability, revocation, and objection. If you believe that the processing of your data violates data protection law or your data protection rights have otherwise been violated in any way, you can complain to the supervisory authority.",
+    "contact_title": "9. Contact for Data Protection",
+    "contact_text": "If you have any questions about data protection, please contact us at the address given in the imprint."
+  },
   "meta": {
     "description": "Portfolio of Adrian Günzel – Junior Web Developer. Projects, resume, contact and more. Get to know me!"
   },
@@ -75,7 +96,8 @@
     "error_message": "Message is required!"
   },
   "footer": {
-    "findme": "Find me on"
+    "findme": "Find me on",
+    "privacy": "Privacy Policy"
   },
   "resume": {
     "title": "READY TO LEARN",

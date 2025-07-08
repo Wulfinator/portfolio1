@@ -15,6 +15,10 @@ const Footer = () => {
           <SocialLinks/>
         </div>
       </div>
+      <div className="flex flex-col justify-end w-full h-full gap-2 text-sm text-gray-400">
+        <a href="/impressum" className="underline hover:text-designColor" aria-label="Impressum">Impressum</a>
+        <a href="/datenschutz" className="underline hover:text-designColor" aria-label="Datenschutz">{t("footer.privacy")}</a>
+      </div>
       {/* <div className="w-full h-full">
         <h2 className="text-xl tracking-wider uppercase text-designColor">
           Quick Link

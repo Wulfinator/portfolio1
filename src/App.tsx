@@ -12,6 +12,7 @@ import Resume from "./components/Resume";
 import { Routes, Route } from "react-router-dom";
 
 const Impressum = lazy(() => import("./components/Impressum"));
+const PrivacyPolicy = lazy(() => import("./components/PrivacyPolicy"));
 
 function App() {
   return (
@@ -39,6 +40,11 @@ function App() {
               <Route path="/impressum" element={
                 <Suspense fallback={<div>Loading...</div>}>
                   <Impressum />
+                </Suspense>
+              } />
+              <Route path="/datenschutz" element={
+                <Suspense fallback={<div>Loading...</div>}>
+                  <PrivacyPolicy />
                 </Suspense>
               } />
             </Routes>

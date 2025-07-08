@@ -1,4 +1,25 @@
 {
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "responsible_title": "1. Verantwortliche Stelle",
+    "responsible_text": "Adrian Günzel\nc/o IP-Management #4871\nLudwig-Erhard-Straße 18\n20459 Hamburg\nE-Mail: a.guenzel83@gmail.com",
+    "hosting_title": "2. Hosting und Content Delivery Network (CDN)",
+    "hosting_text": "Diese Website wird bei Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, USA gehostet. Vercel nutzt Amazon Web Services (AWS) und Cloudflare als Subunternehmer für die technische Auslieferung. Soweit möglich, wurde ein Auftragsverarbeitungsvertrag (AVV) abgeschlossen. Die Datenübertragung in die USA erfolgt auf Grundlage der Standardvertragsklauseln der EU-Kommission.",
+    "logfiles_title": "3. Server-Logfiles",
+    "logfiles_text": "Beim Besuch dieser Website werden durch den Hosting-Anbieter automatisch Informationen in sogenannten Server-Logfiles gespeichert. Dazu gehören IP-Adresse, Browsertyp, Betriebssystem, Referrer-URL, Hostname des zugreifenden Rechners und Uhrzeit der Serveranfrage. Diese Daten dienen ausschließlich der Gewährleistung eines störungsfreien Betriebs und der Verbesserung unseres Angebots und werden nicht mit anderen Datenquellen zusammengeführt.",
+    "ssl_title": "4. SSL-/TLS-Verschlüsselung",
+    "ssl_text": "Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Anfragen über das Kontaktformular, eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von 'http://' auf 'https://' wechselt.",
+    "contactform_title": "5. Kontaktformular",
+    "contactform_text": "Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Formular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.",
+    "social_title": "6. Social Media & externe Links",
+    "social_text": "Diese Website enthält Links zu externen sozialen Netzwerken wie LinkedIn, GitHub oder YouTube. Beim Klicken auf diese Links verlassen Sie unsere Website. Für die Inhalte und den Datenschutz der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.",
+    "cookies_title": "7. Cookies",
+    "cookies_text": "Beim Besuch dieser Website werden keine Cookies gesetzt, sofern nicht ausdrücklich anders angegeben.",
+    "rights_title": "8. Ihre Rechte",
+    "rights_text": "Ihnen stehen grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerruf und Widerspruch zu. Wenn Sie glauben, dass die Verarbeitung Ihrer Daten gegen das Datenschutzrecht verstößt oder Ihre datenschutzrechtlichen Ansprüche sonst in einer Weise verletzt worden sind, können Sie sich bei der Aufsichtsbehörde beschweren.",
+    "contact_title": "9. Kontakt zum Datenschutz",
+    "contact_text": "Für Fragen zum Datenschutz erreichen Sie uns unter der im Impressum angegebenen Adresse."
+  },
   "meta": {
     "description": "Portfolio von Adrian Günzel – Junior Web Developer. Projekte, Lebenslauf, Kontakt und mehr. Jetzt kennenlernen!"
   },
@@ -71,7 +92,8 @@
     "error_message": "Nachricht ist erforderlich!"
   },
   "footer": {
-    "findme": "Finde mich auf"
+    "findme": "Finde mich auf",
+    "privacy": "Datenschutz"
   },
   "resume": {
     "title": "BEREIT ZU LERNEN",
