@@ -1,4 +1,6 @@
 import { Suspense, lazy } from "react";
+import { HelmetProvider } from "react-helmet-async";
+import Meta from "./components/Meta";
 import Banner from "./components/Banner";
 import Contact from "./components/Contact";
 import Feature from "./components/Feature";
@@ -13,34 +15,37 @@ const Impressum = lazy(() => import("./components/Impressum"));
 
 function App() {
   return (
-    <main className="w-full min-h-screen font-bodyFont bg-bodyColor text-lightText">
-      <Navbar />
-      <div className="px-4">
-        <div className="max-w-screen-xl mx-auto">
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  <Banner />
-                  <Feature />
-                  <Projects />
-                  <Resume />
-                  {/* <Testimonial /> */}
-                  <Contact />
-                  <Footer />
-                </>
-              }
-            />
-            <Route path="/impressum" element={
-              <Suspense fallback={<div>Loading...</div>}>
-                <Impressum />
-              </Suspense>
-            } />
-          </Routes>
+    <HelmetProvider>
+      <Meta />
+      <main className="w-full min-h-screen font-bodyFont bg-bodyColor text-lightText">
+        <Navbar />
+        <div className="px-4">
+          <div className="max-w-screen-xl mx-auto">
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <>
+                    <Banner />
+                    <Feature />
+                    <Projects />
+                    <Resume />
+                    {/* <Testimonial /> */}
+                    <Contact />
+                    <Footer />
+                  </>
+                }
+              />
+              <Route path="/impressum" element={
+                <Suspense fallback={<div>Loading...</div>}>
+                  <Impressum />
+                </Suspense>
+              } />
+            </Routes>
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </HelmetProvider>
   );
 }
 
