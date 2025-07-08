@@ -28,7 +28,20 @@ const Impressum = () => {
             {t("impressum.phone")}
           </div>
           <div>
-            <span className="text-sm italic">{t("impressum.source")}</span>
+            <span className="text-sm italic">
+              {(() => {
+                const src = t("impressum.source");
+                const match = src.match(/(https?:\/\/[^\s]+)/);
+                if (match) {
+                  return <>
+                    {src.slice(0, match.index)}
+                    <a href={match[1]} target="_blank" rel="noopener noreferrer" className="underline text-designColor">{match[1]}</a>
+                    {src.slice(match.index! + match[1].length)}
+                  </>;
+                }
+                return src;
+              })()}
+            </span>
           </div>
         </div>
       </div>
