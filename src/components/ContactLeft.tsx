@@ -15,19 +15,20 @@ const ContactLeft = () => {
           Junior Full Stack Developer
         </p>
         <p className="text-base tracking-wide text-gray-400">
-          Thank you for visiting my portfolio! Feel free to contact me via mail below or via contact form.
+          Thank you for visiting my portfolio! Feel free to contact me via mail
+          below or via contact form.
         </p>
         {/* <p className="flex items-center gap-2 text-base text-gray-400">
           Phone: <span className="text-lightText">+968 97859628</span>
         </p> */}
         <p className="flex items-center gap-2 text-base text-gray-400">
-          Email: <span className="text-lightText">adrian.guenzel@mail.de</span>
+          Email: <span className="text-lightText">a.guenzel83@gmail.com</span>
         </p>
       </div>
       <div className="flex flex-col gap-4">
         <h2 className="mb-4 text-base uppercase font-titleFont">Find me in</h2>
         <div className="flex gap-4">
-          <SocialLinks/>
+          <SocialLinks />
         </div>
       </div>
     </div>

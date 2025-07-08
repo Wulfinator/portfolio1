@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 import { logo } from "../assets";
@@ -8,6 +9,24 @@ import SocialLinks from "./SocialLinks";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
+  // Hilfsfunktion für Navigation von anderen Seiten zurück zum Anker auf der Startseite
+  const handleNavClick = (anchor: string) => {
+    if (location.pathname !== "/") {
+      navigate(`/#${anchor}`);
+      setTimeout(() => {
+        if (anchor === "home") {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        } else {
+          const el = document.getElementById(anchor);
+          if (el) {
+            el.scrollIntoView({ behavior: "smooth" });
+          }
+        }
+      }, 100);
+    }
+  };
   return (
     <div className="w-full h-24 sticky top-0 z-50 backdrop-blur-2xl transition-colors bg-bodyColor/70 mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600 px-4">
       <div>
@@ -20,16 +39,24 @@ const Navbar = () => {
               className="text-base font-normal tracking-wide text-gray-400 duration-300 cursor-pointer hover:text-designColor"
               key={_id}
             >
-              <Link
-                activeClass="active"
-                to={link}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                {title}
-              </Link>
+              {link === "impressum" ? (
+                <Link to="/impressum">{title}</Link>
+              ) : location.pathname === "/" ? (
+                <ScrollLink
+                  activeClass="active"
+                  to={link}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  {title}
+                </ScrollLink>
+              ) : (
+                <Link to={`/#${link}`} onClick={() => handleNavClick(link)}>
+                  {title}
+                </Link>
+              )}
             </li>
           ))}
         </ul>
@@ -45,7 +72,8 @@ const Navbar = () => {
               <div>
                 <img className="w-32" src={logo} alt="logo" />
                 <p className="mt-2 text-sm text-gray-400">
-                  Here you find all the info's you need about me. Feel free to visit every page, because that's why you are here, right?
+                  Here you find all the info's you need about me. Feel free to
+                  visit every page, because that's why you are here, right?
                 </p>
               </div>
               <ul className="flex flex-col gap-4">
@@ -54,17 +82,33 @@ const Navbar = () => {
                     key={item._id}
                     className="text-base font-normal tracking-wide text-gray-400 duration-300 cursor-pointer hover:text-designColor"
                   >
-                    <Link
-                      onClick={() => setShowMenu(false)}
-                      activeClass="active"
-                      to={item.link}
-                      spy={true}
-                      smooth={true}
-                      offset={-70}
-                      duration={500}
-                    >
-                      {item.title}
-                    </Link>
+                    {item.link === "impressum" ? (
+                      <Link to="/impressum" onClick={() => setShowMenu(false)}>
+                        {item.title}
+                      </Link>
+                    ) : location.pathname === "/" ? (
+                      <ScrollLink
+                        onClick={() => setShowMenu(false)}
+                        activeClass="active"
+                        to={item.link}
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                      >
+                        {item.title}
+                      </ScrollLink>
+                    ) : (
+                      <Link
+                        to={`/#${item.link}`}
+                        onClick={() => {
+                          setShowMenu(false);
+                          handleNavClick(item.link);
+                        }}
+                      >
+                        {item.title}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>
