@@ -13,7 +13,7 @@ const ContactLeft = () => {
         alt="contactImg"
       />
       <div className="flex flex-col gap-4">
-        <h3 className="text-3xl font-bold text-white">{t("contactLeft.name")}</h3>
+        <h2 className="text-3xl font-bold text-white">{t("contactLeft.name")}</h2>
         <p className="text-lg font-normal text-gray-400">
           {t("contactLeft.role")}
         </p>
@@ -25,7 +25,7 @@ const ContactLeft = () => {
         </p>
       </div>
       <div className="flex flex-col gap-4">
-        <h2 className="mb-4 text-base uppercase font-titleFont">{t("contactLeft.findme")}</h2>
+        <h3 className="mb-4 text-base uppercase font-titleFont">{t("contactLeft.findme")}</h3>
         <div className="flex gap-4">
           <SocialLinks />
         </div>

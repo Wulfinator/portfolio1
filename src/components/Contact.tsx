@@ -93,6 +93,8 @@ const Contact = () => {
                         "outline-designColor"
                       } contactInput`}
                       type="text"
+                      id="contact-name"
+                      aria-label={t("contact.yourname")}
                     />
                   </div>
                 </div>
@@ -108,6 +110,8 @@ const Contact = () => {
                       "outline-designColor"
                     } contactInput`}
                     type="email"
+                    id="contact-email"
+                    aria-label={t("contact.email")}
                   />
                 </div>
                 <div className="flex flex-col gap-4">
@@ -122,6 +126,8 @@ const Contact = () => {
                       "outline-designColor"
                     } contactInput`}
                     type="text"
+                    id="contact-subject"
+                    aria-label={t("contact.subject")}
                   />
                 </div>
                 <div className="flex flex-col gap-4">
@@ -136,12 +142,15 @@ const Contact = () => {
                     } contactTextArea`}
                     cols={30}
                     rows={8}
+                    id="contact-message"
+                    aria-label={t("contact.message")}
                   ></textarea>
                 </div>
                 <div className="w-full">
                   <button
                     onClick={handleSend}
                     className="w-full h-12 bg-[#141518] rounded-lg text-base text-gray-400 tracking-wider uppercase hover:text-white duration-300 hover:border-[1px] hover:border-designColor border-gray-600 border"
+                    aria-label={t("contact.send")}
                   >
                     {t("contact.send")}
                   </button>

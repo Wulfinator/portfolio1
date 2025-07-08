@@ -16,7 +16,7 @@ const Footer = () => {
         </div>
       </div>
       {/* <div className="w-full h-full">
-        <h3 className="text-xl tracking-wider uppercase text-designColor">
+        <h2 className="text-xl tracking-wider uppercase text-designColor">
           Quick Link
         </h3>
         <ul className="flex flex-col gap-4 py-6 overflow-hidden font-medium font-titleFont">
@@ -53,7 +53,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className="w-full h-full">
-        <h3 className="text-xl tracking-wider uppercase text-designColor">
+        <h2 className="text-xl tracking-wider uppercase text-designColor">
           RESOURCES
         </h3>
         <ul className="flex flex-col gap-4 py-6 overflow-hidden font-medium font-titleFont">
@@ -90,7 +90,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className="w-full h-full">
-        <h3 className="text-xl tracking-wider uppercase text-designColor">
+        <h2 className="text-xl tracking-wider uppercase text-designColor">
           DEVELOPERS
         </h3>
         <ul className="flex flex-col gap-4 py-6 overflow-hidden font-medium font-titleFont">

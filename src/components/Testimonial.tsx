@@ -1,12 +1,12 @@
 import { useState } from "react";
-import Slider from "react-slick";
+import Slider, { CustomArrowProps } from "react-slick";
 import { RiStarFill } from "react-icons/ri";
 import { HiArrowRight, HiArrowLeft } from "react-icons/hi";
 import Title from "./Title";
 import { quote, testimonialOne, testimonialTwo } from "../assets";
 import { FadeIn } from "./FadeIn";
 
-function SampleNextArrow(props: any) {
+function SampleNextArrow(props: CustomArrowProps) {
   const { onClick } = props;
   return (
     <div
@@ -18,7 +18,7 @@ function SampleNextArrow(props: any) {
   );
 }
 
-function SamplePrevArrow(props: any) {
+function SamplePrevArrow(props: CustomArrowProps) {
   const { onClick } = props;
   return (
     <div
@@ -40,10 +40,10 @@ const Testimonial = () => {
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    beforeChange: (next: any) => {
+    beforeChange: (_: number, next: number) => {
       setDocActive(next);
     },
-    appendDots: (dots: any) => (
+    appendDots: (dots: React.ReactNode) => (
       <div
         style={{
           borderRadius: "10px",
@@ -58,12 +58,11 @@ const Testimonial = () => {
             marginTop: "20px",
           }}
         >
-          {" "}
-          {dots}{" "}
+          {dots}
         </ul>
       </div>
     ),
-    customPaging: (i: any) => (
+    customPaging: (i: number) => (
       <div
         style={
           i === dotActive
@@ -111,7 +110,7 @@ const Testimonial = () => {
                     <p className="text-xs uppercase text-designColor tracking-wide mb-2">
                       Bound - Trolola
                     </p>
-                    <h3 className="text-2xl font-bold">Jone Duone Joe</h3>
+                    <h4 className="text-2xl font-bold">Jone Duone Joe</h4>
                     <p className="text-base tracking-wide text-gray-500">
                       Operation Officer
                     </p>
@@ -122,9 +121,9 @@ const Testimonial = () => {
                   <div className="w-full h-[70%] py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] rounded-lg shadow-shadowOne p-4 lgl:p-8 flex flex-col justify-center gap-4 lgl:gap-8">
                     <div className="flex flex-col justify-between lgl:items-center py-6 border-b-2 border-b-gray-900">
                       <div>
-                        <h3 className="text-xl lgl:text-2xl font-medium tracking-wide">
+                        <h5 className="text-xl lgl:text-2xl font-medium tracking-wide">
                           Travel Mobile App Design.
-                        </h3>
+                        </h5>
                         <p className="text-base text-gray-400 mt-3">
                           via Upwork - Mar 4, 2015 - Aug 30, 2021 test
                         </p>

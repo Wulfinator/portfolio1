@@ -22,9 +22,9 @@ const Card = ({ title, des, icon }: Props) => {
             )}
           </div>
           <div className="flex flex-col gap-6">
-            <h2 className="text-xl font-bold text-gray-300 md:text-2xl font-titleFont">
+            <h3 className="text-xl font-bold text-gray-300 md:text-2xl font-titleFont">
               {title}
-            </h2>
+            </h3>
             <p className="base">{des}</p>
           </div>
         </div>

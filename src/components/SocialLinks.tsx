@@ -6,12 +6,12 @@ const SocialLinks = () => {
   const { t } = useTranslation();
   return (
     <>
-      <a href="https://www.linkedin.com/in/adrian-guenzel" target="_blank">
+      <a href="https://www.linkedin.com/in/adrian-guenzel" target="_blank" rel="noopener noreferrer" aria-label={t('social.linkedin')}>
         <span className="bannerIcon" title={t('social.linkedin')}>
           <FaLinkedinIn />
         </span>
       </a>
-      <a href="https://github.com/Wulfinator" target="_blank">
+      <a href="https://github.com/Wulfinator" target="_blank" rel="noopener noreferrer" aria-label={t('social.github')}>
         <span className="bannerIcon" title={t('social.github')}>
           <FaGithubSquare />
         </span>

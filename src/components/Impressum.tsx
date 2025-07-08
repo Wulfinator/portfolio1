@@ -35,7 +35,7 @@ const Impressum = () => {
                 if (match) {
                   return <>
                     {src.slice(0, match.index)}
-                    <a href={match[1]} target="_blank" rel="noopener noreferrer" className="underline text-designColor">{match[1]}</a>
+                    <a href={match[1]} target="_blank" rel="noopener noreferrer" className="underline text-designColor" aria-label="Quelle: Impressum-Privatschutz">{match[1]}</a>
                     {src.slice(match.index! + match[1].length)}
                   </>;
                 }

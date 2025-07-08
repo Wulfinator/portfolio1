@@ -20,16 +20,16 @@ const ProjectsCard = ({ title, des, src }: Props) => {
       <div className="flex flex-col w-full gap-6 mt-5">
         <div>
           <div className="flex items-center justify-between">
-            <h3 className="text-base font-normal uppercase text-designColor">
+            <h4 className="text-base font-normal uppercase text-designColor">
               {title}
-            </h3>
+            </h4>
             <div className="flex gap-2">
-              <a href="https://github.com/Wulfinator" target="_blank">
+              <a href="https://github.com/Wulfinator" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                 <span className="inline-flex items-center justify-center w-10 h-10 text-lg text-gray-400 duration-300 bg-black rounded-full cursor-pointer hover:text-designColor">
                   <BsGithub />
                 </span>
               </a>
-              <a href="https://www.youtube.com/@reactjsBD" target="_blank">
+              <a href="https://www.youtube.com/@reactjsBD" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                 <span className="inline-flex items-center justify-center w-10 h-10 text-lg text-gray-400 duration-300 bg-black rounded-full cursor-pointer hover:text-designColor">
                   <FaYoutube />
                 </span>

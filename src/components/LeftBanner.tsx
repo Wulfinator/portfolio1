@@ -19,7 +19,7 @@ const LeftBanner = () => {
   return (
     <FadeIn className="flex flex-col w-full gap-20 lgl:w-1/2">
       <div className="flex flex-col gap-5">
-        <h4 className="text-lg font-normal ">{t("leftBanner.welcome")}</h4>
+        <h2 className="text-lg font-normal ">{t("leftBanner.welcome")}</h2>
         <h1 className="text-6xl font-bold text-white">
           {t("leftBanner.hi")} <span className="capitalize text-[#006400]">Adrian</span>
         </h1>

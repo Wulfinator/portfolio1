@@ -1,3 +1,4 @@
+import { Suspense, lazy } from "react";
 import Banner from "./components/Banner";
 import Contact from "./components/Contact";
 import Feature from "./components/Feature";
@@ -5,9 +6,10 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Resume from "./components/Resume";
-import Impressum from "./components/Impressum";
 // import Testimonial from "./components/Testimonial";
 import { Routes, Route } from "react-router-dom";
+
+const Impressum = lazy(() => import("./components/Impressum"));
 
 function App() {
   return (
@@ -30,7 +32,11 @@ function App() {
                 </>
               }
             />
-            <Route path="/impressum" element={<Impressum />} />
+            <Route path="/impressum" element={
+              <Suspense fallback={<div>Loading...</div>}>
+                <Impressum />
+              </Suspense>
+            } />
           </Routes>
         </div>
       </div>
