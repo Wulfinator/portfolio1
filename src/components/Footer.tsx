@@ -1,12 +1,16 @@
+
 import { logo } from "../assets";
 import { FadeIn } from "./FadeIn";
 import SocialLinks from "./SocialLinks";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <FadeIn className="w-full py-20 h-auto border-b-[1px] border-b-black grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-4 gap-8">
       <div className="flex flex-col w-full h-full gap-8">
         <img className="w-32" src={logo} alt="logo" />
+        <div className="text-gray-400 text-sm mb-2">{t("footer.findme")}</div>
         <div className="flex gap-4">
           <SocialLinks/>
         </div>

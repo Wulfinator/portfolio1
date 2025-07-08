@@ -1,0 +1,114 @@
+{
+  "navbar": {
+    "main": "Main Section",
+    "features": "Features",
+    "about": "Über mich",
+    "contact": "Kontakt",
+    "impressum": "Impressum",
+    "resume": "Lebenslauf"
+  },
+  "impressum": {
+    "title": "Impressum",
+    "info": "Inhalte gemäß §5 DDG",
+    "name": "Adrian Günzel",
+    "address": "c/o IP-Management #4871\nLudwig-Erhard-Straße 18\n20459 Hamburg",
+    "alt_address": "Ludwig-Erhard-Str. 18, c/o IP-Management #4871, 20459, Hamburg",
+    "contact": "Kontaktdaten:",
+    "email": "E-Mail: a.guenzel83@gmail.com",
+    "phone": "Telefon: 016091341618",
+    "source": "Quelle: Impressum-Privatschutz"
+  },
+  "feature": {
+    "title": "Features",
+    "subtitle": "Was ich mache",
+    "app_title": "App-Entwicklung",
+    "app_desc": "Ich entwickle Websites nach höchsten Industriestandards, inklusive Keywords, Meta-Tags, URLs, mobilfreundlich und schnell ladend. Alles wichtige Faktoren für SEO, um bei Suchmaschinen weit oben zu ranken.",
+    "seo_title": "SEO-Optimierung",
+    "seo_desc": "Mit Keywords, Meta-Tags, URLs, mobilfreundlich und schnell ladend – wichtige Faktoren für SEO – bringe ich Websites auf ein hohes Ranking.",
+    "mobile_title": "Mobile Entwicklung",
+    "mobile_desc": "Als Entwickler weiß ich, wie wichtig mobilfreundliche Websites sind, die ein nahtloses Nutzererlebnis bieten.",
+    "ux_title": "UX Design",
+    "ux_desc": "Mein Ziel ist es, benutzerfreundliche und intuitive Oberflächen zu gestalten, die das Nutzererlebnis verbessern. Es geht nicht nur um Ästhetik, sondern auch um Funktionalität und Bedienbarkeit.",
+    "hosting_title": "Webhosting",
+    "hosting_desc": "Wir erarbeiten gemeinsam die Anforderungen, um deine Website abzusichern und die beste Hosting-Lösung zu finden."
+  },
+  "title": {
+    "features": "Features",
+    "whatido": "Was ich mache"
+  },
+  "leftBanner": {
+    "welcome": "WILLKOMMEN IN MEINER WELT",
+    "hi": "Hi, ich bin",
+    "roles": ["Junior Webentwickler.", "Full Stack Entwickler.", "Herr der Funktionen."],
+    "desc": "Als Webentwickler mit Kenntnissen in HTML, CSS und JavaScript sowie Frameworks wie React, Vite & Node arbeite ich eng mit Kunden zusammen, um effiziente, skalierbare und benutzerfreundliche Lösungen zu schaffen. Ich lerne schnell und freue mich darauf, meine Fähigkeiten in Ihrem Unternehmen weiterzuentwickeln.",
+    "findme": "Finde mich auf",
+    "skills": "BESTE SKILLS",
+    "a": ""
+  },
+  "contactLeft": {
+    "name": "Adrian Günzel",
+    "role": "Junior Full Stack Entwickler",
+    "desc": "Danke für deinen Besuch auf meinem Portfolio! Du kannst mich gerne per Mail oder über das Kontaktformular erreichen.",
+    "email": "E-Mail:",
+    "findme": "Finde mich in"
+  },
+  "contact": {
+    "title": "KONTAKT",
+    "subtitle": "Kontaktiere mich",
+    "yourname": "Dein Name",
+    "email": "E-Mail",
+    "subject": "Betreff",
+    "message": "Nachricht",
+    "send": "Nachricht senden",
+    "success": "Danke, lieber {{name}}, deine Nachricht wurde erfolgreich versendet!",
+    "error_required": "Dieses Feld ist erforderlich!",
+    "error_email": "Bitte gib deine E-Mail an!",
+    "error_email_invalid": "Bitte gib eine gültige E-Mail an!",
+    "error_subject": "Bitte gib einen Betreff an!",
+    "error_message": "Nachricht ist erforderlich!"
+  },
+  "footer": {
+    "findme": "Finde mich auf"
+  },
+  "resume": {
+    "title": "BEREIT ZU LERNEN",
+    "desc": "Mein Lebenslauf",
+    "education": "Ausbildung",
+    "skills": "Fähigkeiten",
+    "experience": "Berufserfahrung"
+  },
+  "education": {
+    "webdev_title": "Webentwicklungskurs",
+    "webdev_subtitle": "DCI - Digital Career Institute GmbH (Jan 2023 - heute)",
+    "webdev_result": "Zertifikat",
+    "webdev_desc": "Ich habe den Webentwicklungskurs am Digital Career Institute (DCI) abgeschlossen. Der Lehrplan umfasste grundlegende Programmierkenntnisse in JavaScript, HTML und CSS sowie fortgeschrittenes Wissen, das für jeden Programmierer essenziell ist. Der Kurs war praxisorientiert, und ich habe an realen Projekten gearbeitet, um praktische Erfahrung zu sammeln. Am Ende des Kurses hatte ich ein beeindruckendes Portfolio aufgebaut, das meine Webentwicklungsfähigkeiten und mein Wissen demonstriert.",
+    "tutor_title": "Tutorentätigkeit",
+    "tutor_subtitle": "DCI - Digital Career Institute GmbH (Feb 2023 - Jan 2024)",
+    "tutor_result": "Deutschland",
+    "tutor_desc": "Das Tutorium ist ein außerschulisches Angebot von DCI, das den Teilnehmern die Möglichkeit gibt, das im Unterricht Gelernte zu wiederholen und schwierige oder missverstandene Konzepte mit einem Tutor zu besprechen. Zu meinen Aufgaben gehörten das Beantworten von Fragen, das Überprüfen von Übungen und die Unterstützung der Studierenden."
+  },
+  "experience": {
+    "comingsoon_title": "Demnächst verfügbar",
+    "comingsoon_subtitle": "",
+    "comingsoon_result": "Deutschland",
+    "comingsoon_desc": "Da ich den Kurs bei DCI erst kürzlich abgeschlossen habe, gibt es noch keine Berufserfahrung außer dem Lernprozess. Bleib dran!"
+  },
+  "skills": {
+    "features": "Features",
+    "design": "Design-Fähigkeit",
+    "photoshop": "Photoshop",
+    "figma": "Figma",
+    "adobexd": "Adobe XD",
+    "illustrator": "Adobe Illustrator"
+  },
+  "social": {
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "projects": {
+    "title": "SCHAU DIR MEINE PROJEKTE AN",
+    "desc": "Meine Projekte",
+    "comingsoon_title": "Demnächst verfügbar",
+    "comingsoon_desc": "Aktuell gibt es keine öffentlichen Projekte, aber das wird sich bald ändern."
+  }
+}

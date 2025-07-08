@@ -1,42 +1,46 @@
 import { AiFillAppstore } from "react-icons/ai";
 import { FaMobile, FaGlobe } from "react-icons/fa";
 import { SiProgress, SiAntdesign } from "react-icons/si";
+
 import Card from "./Card";
 import Title from "./Title";
 import { FadeIn } from "./FadeIn";
+import { useTranslation } from "react-i18next";
+
 
 const Feature = () => {
+  const { t } = useTranslation();
   return (
     <section
       id="features"
       className="w-full py-20 border-b-[1px] border-b-gray-700"
     >
       <FadeIn>
-        <Title title="Features" des="What I Do" />
+        <Title title={t("feature.title")} des={t("feature.subtitle")} />
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 xl:gap-20">
           <Card
-            title="App Development"
-            des="I build websites of the highest industry standards, including keywords, meta tags, URLs, mobile-friendly and fast loading. All important factors for SEO to rank high on search engines."
+            title={t("feature.app_title")}
+            des={t("feature.app_desc")}
             icon={<AiFillAppstore />}
           />
           <Card
-            title="SEO Optimisation"
-            des="With keywords, meta tags, URLs, mobile-friendly and fast loading, important factors for SEO, i build Website on a high rank."
+            title={t("feature.seo_title")}
+            des={t("feature.seo_desc")}
             icon={<SiProgress />}
           />
           <Card
-            title="Mobile Development"
-            des="As a developer, I understand the importance of creating mobile-friendly websites that provide a seamless user experience. "
+            title={t("feature.mobile_title")}
+            des={t("feature.mobile_desc")}
             icon={<FaMobile />}
           />
           <Card
-            title="UX Design"
-            des="My goal is to create user-friendly and intuitive interfaces that enhance the user experience. It's not only about aesthetics, it's also about functionality and usability."
+            title={t("feature.ux_title")}
+            des={t("feature.ux_desc")}
             icon={<SiAntdesign />}
           />
           <Card
-            title="Hosting Websites"
-            des="We will work together on the specifications that are needed to secure your website and find the best hosting solution."
+            title={t("feature.hosting_title")}
+            des={t("feature.hosting_desc")}
             icon={<FaGlobe />}
           />
         </div>

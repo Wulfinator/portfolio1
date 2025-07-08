@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import Title from "./Title";
 import Education from "./Education";
 import Skills from "./Skills";
@@ -7,6 +8,7 @@ import Experience from "./Experience";
 import { FadeIn } from "./FadeIn";
 
 const Resume = () => {
+  const { t } = useTranslation();
   const [educationData, setEducationData] = useState(true);
   const [skillData, setSkillData] = useState(false);
   const [experienceData, setExperienceData] = useState(false);
@@ -18,7 +20,7 @@ const Resume = () => {
     >
       <FadeIn>
         <div className="flex items-center justify-center text-center">
-          <Title title="READY TO LEARN" des="My Resume" />
+          <Title title={t('resume.title')} des={t('resume.desc')} />
         </div>
         <div>
           <ul className="grid w-full grid-cols-1 gap-4 md:grid-cols-3 xl:grid-cols-3">
@@ -35,7 +37,7 @@ const Resume = () => {
                   : "border-transparent"
               } resumeLi`}
             >
-              Education
+              {t('resume.education')}
             </li>
             <li
               onClick={() => {
@@ -50,7 +52,7 @@ const Resume = () => {
                   : "border-transparent"
               } resumeLi`}
             >
-              Professional Skills
+              {t('resume.skills')}
             </li>
             <li
               onClick={() => {
@@ -65,7 +67,7 @@ const Resume = () => {
                   : "border-transparent"
               } resumeLi`}
             >
-              Experience
+              {t('resume.experience')}
             </li>
             {/* <li
               onClick={() => {
@@ -80,7 +82,7 @@ const Resume = () => {
                   : "border-transparent"
               } resumeLi`}
             >
-              Achievements
+              {t('resume.achievements')}
             </li> */}
           </ul>
         </div>

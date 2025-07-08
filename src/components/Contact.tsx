@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
@@ -6,6 +7,7 @@ import Title from "./Title";
 import { FadeIn } from "./FadeIn";
 
 const Contact = () => {
+  const { t } = useTranslation();
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -26,15 +28,15 @@ const Contact = () => {
   const handleSend = (e: any) => {
     e.preventDefault();
     if (username === "") {
-      setErrMsg("Username is required!");
+      setErrMsg(t("contact.error_required"));
     } else if (email === "") {
-      setErrMsg("Please give your Email!");
+      setErrMsg(t("contact.error_email"));
     } else if (!emailValidation(email)) {
-      setErrMsg("Give a valid Email!");
+      setErrMsg(t("contact.error_email_invalid"));
     } else if (subject === "") {
-      setErrMsg("Plese give your Subject!");
+      setErrMsg(t("contact.error_subject"));
     } else if (message === "") {
-      setErrMsg("Message is required!");
+      setErrMsg(t("contact.error_message"));
     } else {
       emailjs
         .send("service_a8353vs", "template_p7x5f9f", {
@@ -45,9 +47,7 @@ const Contact = () => {
           reply_to: email,
         })
         .then(() => {
-          setSuccessMsg(
-            `Thank you dear ${username}, Your Messages has been sent Successfully!`
-          );
+          setSuccessMsg(t("contact.success", { name: username }));
           setErrMsg("");
           setUsername("");
           setEmail("");
@@ -63,7 +63,7 @@ const Contact = () => {
     >
       <FadeIn>
         <div className="flex items-center justify-center text-center">
-          <Title title="CONTACT" des="Contact Me" />
+          <Title title={t("contact.title") || "CONTACT"} des={t("contact.subtitle") || "Contact Me"} />
         </div>
         <div className="w-full">
           <div className="flex flex-col justify-between w-full h-auto lgl:flex-row">
@@ -83,7 +83,7 @@ const Contact = () => {
                 <div className="flex flex-col w-full gap-10 lgl:flex-row">
                   <div className="flex flex-col w-full gap-4 lgl:w-1/2">
                     <p className="text-sm tracking-wide text-gray-400 uppercase">
-                      Your name
+                      {t("contact.yourname")}
                     </p>
                     <input
                       onChange={(e) => setUsername(e.target.value)}
@@ -98,7 +98,7 @@ const Contact = () => {
                 </div>
                 <div className="flex flex-col gap-4">
                   <p className="text-sm tracking-wide text-gray-400 uppercase">
-                    Email
+                    {t("contact.email")}
                   </p>
                   <input
                     onChange={(e) => setEmail(e.target.value)}
@@ -112,7 +112,7 @@ const Contact = () => {
                 </div>
                 <div className="flex flex-col gap-4">
                   <p className="text-sm tracking-wide text-gray-400 uppercase">
-                    Subject
+                    {t("contact.subject")}
                   </p>
                   <input
                     onChange={(e) => setSubject(e.target.value)}
@@ -126,7 +126,7 @@ const Contact = () => {
                 </div>
                 <div className="flex flex-col gap-4">
                   <p className="text-sm tracking-wide text-gray-400 uppercase">
-                    Message
+                    {t("contact.message")}
                   </p>
                   <textarea
                     onChange={(e) => setMessage(e.target.value)}
@@ -143,7 +143,7 @@ const Contact = () => {
                     onClick={handleSend}
                     className="w-full h-12 bg-[#141518] rounded-lg text-base text-gray-400 tracking-wider uppercase hover:text-white duration-300 hover:border-[1px] hover:border-designColor border-gray-600 border"
                   >
-                    Send Message
+                    {t("contact.send")}
                   </button>
                 </div>
                 {errMsg && (

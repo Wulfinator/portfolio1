@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+// import { useTranslation } from "react-i18next";
 
 const Skills = () => {
+  // const { t } = useTranslation();
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -10,13 +12,13 @@ const Skills = () => {
       {/* <div className="w-full lgl:w-1/2">
         <div className="flex flex-col gap-4 py-12 font-titleFont">
           <p className="text-sm text-designColor tracking-[4px] uppercase">
-            Features
+            {t('skills.features')}
           </p>
-          <h2 className="text-3xl font-bold md:text-4xl">Design Skill</h2>
+          <h2 className="text-3xl font-bold md:text-4xl">{t('skills.design')}</h2>
         </div>
         <div className='className="flex flex-col w-full gap-6 mt-14'>
           <div className="overflow-x-hidden">
-            <p className="text-sm font-medium uppercase">Photoshot</p>
+            <p className="text-sm font-medium uppercase">{t('skills.photoshop')}</p>
             <span className="inline-flex w-full h-2 mt-2 bg-gray-700 rounded-md">
               <motion.span
                 initial={{ x: "-100%", opacity: 0 }}
@@ -29,7 +31,7 @@ const Skills = () => {
             </span>
           </div>
           <div className="overflow-x-hidden">
-            <p className="text-sm font-medium uppercase">Figma</p>
+            <p className="text-sm font-medium uppercase">{t('skills.figma')}</p>
             <span className="inline-flex w-full h-2 mt-2 bg-gray-700 rounded-md">
               <motion.span
                 initial={{ x: "-100%", opacity: 0 }}
@@ -42,7 +44,7 @@ const Skills = () => {
             </span>
           </div>
           <div className="overflow-x-hidden">
-            <p className="text-sm font-medium uppercase">Adobe XD.</p>
+            <p className="text-sm font-medium uppercase">{t('skills.adobexd')}</p>
             <span className="inline-flex w-full h-2 mt-2 bg-gray-700 rounded-md">
               <motion.span
                 initial={{ x: "-100%", opacity: 0 }}
@@ -55,7 +57,7 @@ const Skills = () => {
             </span>
           </div>
           <div className="overflow-x-hidden">
-            <p className="text-sm font-medium uppercase">Adobe Illustrator</p>
+            <p className="text-sm font-medium uppercase">{t('skills.illustrator')}</p>
             <span className="inline-flex w-full h-2 mt-2 bg-gray-700 rounded-md">
               <motion.span
                 initial={{ x: "-100%", opacity: 0 }}

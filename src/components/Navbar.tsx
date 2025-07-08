@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Link as ScrollLink } from "react-scroll";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
+import { FaGlobe } from "react-icons/fa";
 import { MdClose } from "react-icons/md";
 import { logo } from "../assets";
 import { navLinksdata } from "../constants";
@@ -9,6 +11,7 @@ import SocialLinks from "./SocialLinks";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const { t, i18n } = useTranslation();
   const location = useLocation();
   const navigate = useNavigate();
   // Hilfsfunktion für Navigation von anderen Seiten zurück zum Anker auf der Startseite
@@ -34,13 +37,13 @@ const Navbar = () => {
       </div>
       <div>
         <ul className="items-center hidden gap-6 mdl:inline-flex lg:gap-10">
-          {navLinksdata.map(({ _id, title, link }) => (
+          {navLinksdata.map(({ _id, link }) => (
             <li
               className="text-base font-normal tracking-wide text-gray-400 duration-300 cursor-pointer hover:text-designColor"
               key={_id}
             >
               {link === "impressum" ? (
-                <Link to="/impressum">{title}</Link>
+                <Link to="/impressum">{t(`navbar.impressum`)}</Link>
               ) : location.pathname === "/" ? (
                 <ScrollLink
                   activeClass="active"
@@ -50,16 +53,42 @@ const Navbar = () => {
                   offset={-70}
                   duration={500}
                 >
-                  {title}
+                  {t(`navbar.${link === "home" ? "main" : link}`)}
                 </ScrollLink>
               ) : (
                 <Link to={`/#${link}`} onClick={() => handleNavClick(link)}>
-                  {title}
+                  {t(`navbar.${link === "home" ? "main" : link}`)}
                 </Link>
               )}
             </li>
           ))}
         </ul>
+        {/* Language Switcher als Dropdown hinter Weltkugel */}
+        <div className="ml-4 relative inline-flex items-center">
+          <button
+            className="flex items-center justify-center w-10 h-10 text-xl bg-black rounded-full cursor-pointer text-designColor hover:bg-gray-800 focus:outline-none"
+            onClick={() => setShowMenu((prev) => !prev)}
+            aria-label="Change language"
+          >
+            <FaGlobe />
+          </button>
+          {showMenu && (
+            <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-28 bg-bodyColor border border-gray-700 rounded shadow-lg z-50">
+              <button
+                onClick={() => { i18n.changeLanguage('de'); setShowMenu(false); }}
+                className={`block w-full px-4 py-2 text-left hover:bg-gray-700 ${i18n.language === 'de' ? 'font-bold underline' : ''}`}
+              >
+                Deutsch
+              </button>
+              <button
+                onClick={() => { i18n.changeLanguage('en'); setShowMenu(false); }}
+                className={`block w-full px-4 py-2 text-left hover:bg-gray-700 ${i18n.language === 'en' ? 'font-bold underline' : ''}`}
+              >
+                English
+              </button>
+            </div>
+          )}
+        </div>
         <span
           onClick={() => setShowMenu(!showMenu)}
           className="inline-flex items-center justify-center w-10 h-10 text-xl bg-black rounded-full cursor-pointer mdl:hidden text-designColor"

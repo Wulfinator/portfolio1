@@ -1,0 +1,115 @@
+{
+  "social": {
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "navbar": {
+    "main": "Main Section",
+    "features": "Features",
+    "about": "About Me",
+    "contact": "Contact",
+    "impressum": "Impressum",
+    "resume": "Resume"
+  },
+  "impressum": {
+    "title": "Imprint",
+    "info": "Information according to §5 DDG",
+    "name": "Adrian Günzel",
+    "address": "c/o IP-Management #4871\nLudwig-Erhard-Straße 18\n20459 Hamburg",
+    "alt_address": "Ludwig-Erhard-Str. 18, c/o IP-Management #4871, 20459, Hamburg",
+    "contact": "Contact details:",
+    "email": "E-mail: a.guenzel83@gmail.com",
+    "phone": "Phone: 016091341618",
+    "source": "Source: Impressum-Privatschutz"
+  },
+  "feature": {
+    "title": "Features",
+    "subtitle": "What I Do",
+    "app_title": "App Development",
+    "app_desc": "I build websites of the highest industry standards, including keywords, meta tags, URLs, mobile-friendly and fast loading. All important factors for SEO to rank high on search engines.",
+    "seo_title": "SEO Optimisation",
+    "seo_desc": "With keywords, meta tags, URLs, mobile-friendly and fast loading, important factors for SEO, I build Website on a high rank.",
+    "mobile_title": "Mobile Development",
+    "mobile_desc": "As a developer, I understand the importance of creating mobile-friendly websites that provide a seamless user experience.",
+    "ux_title": "UX Design",
+    "ux_desc": "My goal is to create user-friendly and intuitive interfaces that enhance the user experience. It's not only about aesthetics, it's also about functionality and usability.",
+    "hosting_title": "Hosting Websites",
+    "hosting_desc": "We will work together on the specifications that are needed to secure your website and find the best hosting solution."
+  },
+  "title": {
+    "features": "Features",
+    "whatido": "What I Do"
+  },
+  "leftBanner": {
+    "welcome": "WELCOME TO MY WORLD",
+    "hi": "Hi, I'm",
+    "roles": ["Junior WebDeveloper.", "Full Stack Developer.", "Lord of the Funktions."],
+    "desc": "As a web developer with knowledge of HTML, CSS and JavaScript as well as frameworks such as React, Vite & Node, I work closely with customers to create efficient, scalable and user-friendly solutions. I am a quick learner and look forward to improve my skills in your company.",
+    "findme": "Find me on",
+    "skills": "BEST SKILLS",
+    "a": "a"
+  },
+  "contactLeft": {
+    "name": "Adrian Günzel",
+    "role": "Junior Full Stack Developer",
+    "desc": "Thank you for visiting my portfolio! Feel free to contact me via mail below or via contact form.",
+    "email": "Email:",
+    "findme": "Find me in"
+  },
+  "contact": {
+    "title": "CONTACT",
+    "subtitle": "Contact Me",
+    "yourname": "Your name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send Message",
+    "success": "Thank you dear {{name}}, your message has been sent successfully!",
+    "error_required": "This field is required!",
+    "error_email": "Please give your Email!",
+    "error_email_invalid": "Give a valid Email!",
+    "error_subject": "Please give your Subject!",
+    "error_message": "Message is required!"
+  },
+  "footer": {
+    "findme": "Find me on"
+  },
+  "resume": {
+    "title": "READY TO LEARN",
+    "desc": "My Resume",
+    "education": "Education",
+    "skills": "Professional Skills",
+    "experience": "Experience"
+  },
+  "education": {
+    "webdev_title": "Web Development Course",
+    "webdev_subtitle": "DCI - Digital Career Institute GmbH (Jan 2023 - now)",
+    "webdev_result": "Certification",
+    "webdev_desc": "I completed the web development course offered by the Digital Career Institute (DCI). The curriculum included basic programming skills in JavaScript, HTML and CSS, as well as advanced knowledge that is essential for any programmer. The course was hands-on, and I worked on real-life projects to gain hands-on experience. By the end of the course, I had built up an impressive portfolio that demonstrated my web development skills and knowledge.",
+    "tutor_title": "Tutorship",
+    "tutor_subtitle": "DCI - Digital Career Institute GmbH (Feb 2023 - Jan 2024)",
+    "tutor_result": "Germany",
+    "tutor_desc": "Tutoring is an extracurricular service provided by DCI that gives participants the opportunity to review what they have learned in class and to review difficult or misunderstood concepts with a tutor. My tasks included answering questions, reviewing exercises, supporting students"
+  },
+  "experience": {
+    "comingsoon_title": "Coming soon",
+    "comingsoon_subtitle": "",
+    "comingsoon_result": "Germany",
+    "comingsoon_desc": "Because I have recently finished the course at DCI of course there is no experience instead of the learning process. So stay tuned"
+  },
+  "skills": {
+    "features": "Features",
+    "design": "Design Skill",
+    "photoshop": "Photoshop",
+    "figma": "Figma",
+    "adobexd": "Adobe XD",
+    "illustrator": "Adobe Illustrator"
+  },
+
+  "projects": {
+    "title": "FEEL FREE TO VISIT MY PROJECTS",
+    "desc": "My Projects",
+    "comingsoon_title": "Coming Soon",
+    "comingsoon_desc": "Currently there are no public projects available, but that will change soon."
+  }
+}
