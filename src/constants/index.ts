@@ -34,4 +34,9 @@ export const navLinksdata = [
     title: "Impressum",
     link: "impressum",
   },
+  {
+    _id: 1008,
+    title: "datenschutz",
+    link: "datenschutz",
+  },
 ];
